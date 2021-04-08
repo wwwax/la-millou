@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/app-name/static/css/main.f3542cf4.chunk.css",
+    "main.js": "/app-name/static/js/main.6e8a62b9.chunk.js",
+    "main.js.map": "/app-name/static/js/main.6e8a62b9.chunk.js.map",
+    "runtime-main.js": "/app-name/static/js/runtime-main.c862bfce.js",
+    "runtime-main.js.map": "/app-name/static/js/runtime-main.c862bfce.js.map",
+    "static/js/2.f040d5b3.chunk.js": "/app-name/static/js/2.f040d5b3.chunk.js",
+    "static/js/2.f040d5b3.chunk.js.map": "/app-name/static/js/2.f040d5b3.chunk.js.map",
+    "index.html": "/app-name/index.html",
+    "static/css/main.f3542cf4.chunk.css.map": "/app-name/static/css/main.f3542cf4.chunk.css.map",
+    "static/js/2.f040d5b3.chunk.js.LICENSE.txt": "/app-name/static/js/2.f040d5b3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/app-name/static/media/Prata-Regular.a4837b5d.ttf",
+    "static/media/logo.47e57a44.svg": "/app-name/static/media/logo.47e57a44.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c862bfce.js",
+    "static/js/2.f040d5b3.chunk.js",
+    "static/css/main.f3542cf4.chunk.css",
+    "static/js/main.6e8a62b9.chunk.js"
+  ]
+}
