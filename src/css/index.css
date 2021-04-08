@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Prata-Regular';
+  src: url('../fonts/Prata-Regular.woff2') format('woff2'),
+    url('../fonts/Prata-Regular.woff') format('woff'),
+    url('../fonts/Prata-Regular.ttf') format('ttf');
+}
+
+:root {
+  --primary: #002855;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

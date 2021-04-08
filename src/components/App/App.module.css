@@ -1,0 +1,8 @@
+.title {
+  color: var(--primary);
+}
+
+.subtitle {
+  color: tomato;
+  font-family: 'Prata-Regular';
+}
