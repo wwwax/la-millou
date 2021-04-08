@@ -1,13 +1,23 @@
-import Header from '../Header';
-import Intro from '../Intro';
+import Header from "../Header";
+import Intro from "../Intro";
+import Slider from "../Slider";
+import Products from "../Products";
+import NewsLetter from "../NewsLetter";
+import Footer from "../Footer";
 
-import './App.css';
+import "./App.css";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Intro />
+      <div className="wrapper">
+        <Header />
+        <Intro />
+        <Slider />
+        <Products />
+        <NewsLetter />
+        <Footer />
+      </div>
     </>
   );
 };

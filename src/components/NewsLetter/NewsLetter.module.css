@@ -1,0 +1,14 @@
+.newsLetter {
+  padding: 40px 0;
+  background-color: rgb(101, 66, 197);
+}
+
+.title {
+  color: lawngreen;
+}
+
+@media (min-width: 768px) {
+  .newsLetter {
+    display: none;
+  }
+}

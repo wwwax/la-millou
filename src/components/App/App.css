@@ -1,4 +1,9 @@
-.test {
-  font-size: 30px;
-  color: green;
+.container {
+  max-width: 300px;
+}
+
+.wrapper {
+  padding: 20px;
+  background-color: orchid;
+  height: 100vh;
 }
