@@ -1,0 +1,19 @@
+.sliderMobile {
+  padding: 40px 0;
+  background-color: aquamarine;
+}
+
+.title {
+  color: tomato;
+}
+
+.test {
+  color: red;
+  background-color: green;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: none;
+  }
+}

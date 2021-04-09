@@ -1,0 +1,16 @@
+.sliderDesktop {
+  padding: 40px 0;
+  background-color: aquamarine;
+  display: none;
+}
+
+.title {
+  color: tomato;
+}
+
+@media (min-width: 1024px) {
+  .sliderDesktop {
+    display: block;
+    width: 50%;
+  }
+}

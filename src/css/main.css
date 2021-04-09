@@ -34,3 +34,10 @@ h6 {
 p {
   margin: 0;
 }
+
+/* CONTAINER */
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+}
