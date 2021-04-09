@@ -1,0 +1,10 @@
+.slider {
+  background-color: orangered;
+  padding: 40px 0;
+}
+
+@media (min-width: 1024px) {
+  .slider {
+    width: 50%;
+  }
+}
