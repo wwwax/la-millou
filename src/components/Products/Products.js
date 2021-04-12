@@ -1,3 +1,4 @@
+import Button from '../Button';
 import styles from './Products.module.css';
 
 const Products = () => {
@@ -72,6 +73,8 @@ const Products = () => {
               </label>
             </div>
           </div>
+
+          <Button text='Надіслати' />
         </form>
       </div>
     </div>

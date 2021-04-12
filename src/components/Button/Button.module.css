@@ -1,0 +1,10 @@
+.btn {
+  background-color: var(--primary);
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 30px;
+}
