@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/la-millou/static/css/main.35f1794c.chunk.css",
-    "main.js": "/la-millou/static/js/main.b168c4b9.chunk.js",
-    "main.js.map": "/la-millou/static/js/main.b168c4b9.chunk.js.map",
+    "main.css": "/la-millou/static/css/main.c254245d.chunk.css",
+    "main.js": "/la-millou/static/js/main.a0ee858c.chunk.js",
+    "main.js.map": "/la-millou/static/js/main.a0ee858c.chunk.js.map",
     "runtime-main.js": "/la-millou/static/js/runtime-main.6b6604f3.js",
     "runtime-main.js.map": "/la-millou/static/js/runtime-main.6b6604f3.js.map",
-    "static/js/2.37e4fb34.chunk.js": "/la-millou/static/js/2.37e4fb34.chunk.js",
-    "static/js/2.37e4fb34.chunk.js.map": "/la-millou/static/js/2.37e4fb34.chunk.js.map",
+    "static/js/2.e659bec0.chunk.js": "/la-millou/static/js/2.e659bec0.chunk.js",
+    "static/js/2.e659bec0.chunk.js.map": "/la-millou/static/js/2.e659bec0.chunk.js.map",
     "index.html": "/la-millou/index.html",
-    "static/css/main.35f1794c.chunk.css.map": "/la-millou/static/css/main.35f1794c.chunk.css.map",
-    "static/js/2.37e4fb34.chunk.js.LICENSE.txt": "/la-millou/static/js/2.37e4fb34.chunk.js.LICENSE.txt",
+    "static/css/main.c254245d.chunk.css.map": "/la-millou/static/css/main.c254245d.chunk.css.map",
+    "static/js/2.e659bec0.chunk.js.LICENSE.txt": "/la-millou/static/js/2.e659bec0.chunk.js.LICENSE.txt",
     "static/media/main.css": "/la-millou/static/media/Prata-Regular.a4837b5d.ttf",
     "static/media/logo.47e57a44.svg": "/la-millou/static/media/logo.47e57a44.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6b6604f3.js",
-    "static/js/2.37e4fb34.chunk.js",
-    "static/css/main.35f1794c.chunk.css",
-    "static/js/main.b168c4b9.chunk.js"
+    "static/js/2.e659bec0.chunk.js",
+    "static/css/main.c254245d.chunk.css",
+    "static/js/main.a0ee858c.chunk.js"
   ]
 }
