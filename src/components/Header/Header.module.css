@@ -1,8 +1,11 @@
 .header {
+  margin: 24px 0;
+}
+
+.header_inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 24px 0;
 }
 
 .logo {
@@ -16,7 +19,21 @@
 }
 
 @media (min-width: 1024px) {
-  .header {
+  .header_inner {
     justify-content: flex-start;
+  }
+
+  .logo {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    margin: 40px 0 80px;
+  }
+
+  .logo {
+    width: 170px;
   }
 }
