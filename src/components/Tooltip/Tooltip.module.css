@@ -1,0 +1,13 @@
+.tooltip {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+}
