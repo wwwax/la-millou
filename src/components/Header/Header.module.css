@@ -1,8 +1,8 @@
-.header {
+.section {
   margin: 24px 0;
 }
 
-.header_inner {
+.inner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,13 +13,13 @@
 }
 
 @media (min-width: 768px) {
-  .header {
+  .section {
     margin: 30px 0;
   }
 }
 
 @media (min-width: 1024px) {
-  .header_inner {
+  .inner {
     justify-content: flex-start;
   }
 
@@ -29,7 +29,7 @@
 }
 
 @media (min-width: 1440px) {
-  .header {
+  .section {
     margin: 40px 0 80px;
   }
 

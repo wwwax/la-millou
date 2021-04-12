@@ -20,7 +20,7 @@ const Products = () => {
                 id='blankets'
                 name='products'
               />
-              <label className={styles.label} for='blankets'>
+              <label className={styles.label} htmlFor='blankets'>
                 ковдри
               </label>
             </div>
@@ -32,7 +32,7 @@ const Products = () => {
                 id='baby-clothes'
                 name='products'
               />
-              <label className={styles.label} for='baby-clothes'>
+              <label className={styles.label} htmlFor='baby-clothes'>
                 дитячий одяг
               </label>
             </div>
@@ -44,7 +44,7 @@ const Products = () => {
                 id='pillows'
                 name='products'
               />
-              <label className={styles.label} for='pillows'>
+              <label className={styles.label} htmlFor='pillows'>
                 подушки
               </label>
             </div>
@@ -56,7 +56,7 @@ const Products = () => {
                 id='towels-bathrobes'
                 name='products'
               />
-              <label className={styles.label} for='towels-bathrobes'>
+              <label className={styles.label} htmlFor='towels-bathrobes'>
                 рушники і халати
               </label>
             </div>
@@ -68,7 +68,7 @@ const Products = () => {
                 id='bags-backpacks'
                 name='products'
               />
-              <label className={styles.label} for='bags-backpacks'>
+              <label className={styles.label} htmlFor='bags-backpacks'>
                 торби і рюкзаки
               </label>
             </div>

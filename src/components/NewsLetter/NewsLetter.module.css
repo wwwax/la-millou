@@ -1,14 +1,55 @@
-.newsLetter {
-  padding: 40px 0;
-  background-color: rgb(101, 66, 197);
+.section {
+  padding: 56px 0 64px;
 }
 
-.title {
-  color: lawngreen;
+.text {
+  font-size: 20px;
+  line-height: 25px;
+  color: #909090;
+  margin-bottom: 24px;
 }
+
+.bold {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input {
+  background-color: #ededed;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  width: 55%;
+}
+
+/* PRIVACY POLICY */
+
+/* MEDIA */
 
 @media (min-width: 768px) {
-  .newsLetter {
-    display: none;
+  .section {
+    padding: 34px 0;
+  }
+
+  .text {
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+  .section {
+    padding: 68px 0;
+  }
+
+  .text {
+    margin-bottom: 30px;
   }
 }

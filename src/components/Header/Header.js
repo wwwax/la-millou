@@ -3,9 +3,9 @@ import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <div className={styles.section}>
       <div className='container'>
-        <div className={styles.header_inner}>
+        <div className={styles.inner}>
           <img className={styles.logo} src={logo} alt='site logo' />
         </div>
       </div>
