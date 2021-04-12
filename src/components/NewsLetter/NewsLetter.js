@@ -12,14 +12,19 @@ const NewsLetter = () => {
         </div>
 
         <form className={styles.form}>
-          <input className={styles.input} type='text' />
-          <Button text='Зареєструйтесь' />
-        </form>
+          <div className={styles.registration}>
+            <input className={styles.registrationInput} type='text' />
+            <Button text='Зареєструйтесь' />
+          </div>
 
-        <div className={styles.privacyPolicy}>
-          <input type='checkbox' />
-          <label htmlFor=''></label>
-        </div>
+          <div className={styles.privacyPolicy}>
+            <input className={styles.privacyPolicyInput} type='checkbox' id='policy' />
+            <label className={styles.privacyPolicyLabel} htmlFor='policy'>
+              Більше інформації про обробку даних можна знайти в нашій Політиці
+              конфіденційності.
+            </label>
+          </div>
+        </form>
       </div>
     </div>
   );

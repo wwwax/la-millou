@@ -1,8 +1,21 @@
 .footer {
-  background-color: #ca4a5f;
-  padding: 40px 0;
+  padding: 16px 0 46px;
+  border-top: 2px solid #ededed;
 }
 
-.title {
-  color: #4b4e53;
+.text {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--primary);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 18px 0;
+  }
+
+  .text {
+    text-align: left;
+  }
 }

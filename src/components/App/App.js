@@ -11,14 +11,15 @@ import styles from './App.module.css';
 
 const App = () => {
   const windowSize = useWindowSize();
+  const isMobile = windowSize.width < 1024;
 
   return (
     <div className={styles.wrapper}>
-      {windowSize.width < 1024 ? null : <Slider />}
+      {!isMobile && <Slider />}
       <div className={styles.wrapper_inner}>
         <Header />
         <Intro />
-        {windowSize.width < 1024 ? <Slider /> : null}
+        {isMobile && <Slider />}
         <Products />
         <NewsLetter />
         <Footer />

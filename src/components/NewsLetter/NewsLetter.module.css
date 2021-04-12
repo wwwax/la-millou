@@ -2,6 +2,8 @@
   padding: 56px 0 64px;
 }
 
+/* TEXT */
+
 .text {
   font-size: 20px;
   line-height: 25px;
@@ -14,12 +16,15 @@
   color: var(--primary);
 }
 
-.form {
+/* REGISTRATION */
+
+.registration {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
-.input {
+.registrationInput {
   background-color: #ededed;
   outline: none;
   border: none;
@@ -28,6 +33,50 @@
 }
 
 /* PRIVACY POLICY */
+
+.privacyPolicy {
+  width: 300px;
+}
+
+.privacyPolicyLabel {
+  user-select: none;
+}
+
+.privacyPolicyInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  margin-right: 20px;
+}
+
+.privacyPolicyInput::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ededed;
+  border: none;
+}
+
+.privacyPolicyInput:checked::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  /* border-radius: 50%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  visibility: visible;
+}
 
 /* MEDIA */
 
