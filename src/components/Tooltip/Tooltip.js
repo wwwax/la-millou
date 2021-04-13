@@ -1,9 +1,16 @@
 import styles from './Tooltip.module.css';
 
-const Tooltip = () => {
+const Tooltip = ({ name, brand, ico }) => {
   return (
     <div className={styles.tooltip}>
-      <div>Tooltip</div>
+      <div className={styles.tooltipBtn}>
+        <img className={styles.tooltipIco} src={ico} alt='product ico' />
+      </div>
+
+      <div className={styles.tooltipContent}>
+        <div className={styles.name}>{name}</div>
+        <div className={styles.brand}>{brand}</div>
+      </div>
     </div>
   );
 };

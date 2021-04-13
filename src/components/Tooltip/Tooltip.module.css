@@ -1,13 +1,107 @@
 .tooltip {
-  width: 200px;
-  height: 100px;
-  background-color: teal;
+  position: absolute;
+  left: 10%;
+  top: 36%;
+}
+
+.tooltipContent {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 15px;
+  visibility: hidden;
+}
+
+.name,
+.brand {
+  font-family: 'Prata-Regular';
+  color: var(--primary);
+  text-align: center;
+}
+
+.name {
+  font-size: 8px;
+  line-height: 11px;
+}
+
+.brand {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+/* TOOLTIP_BTN */
+
+.tooltipBtn {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -30px;
+  bottom: -30px;
+}
+
+.tooltipBtn:hover + .tooltipContent {
+  visibility: visible;
+}
+
+.tooltipIco {
+  width: 12px;
+  height: 12px;
+}
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+  .tooltipContent {
+    padding: 8px 24px;
+  }
+
+  .name {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .brand {
+    font-size: 29px;
+    line-height: 39px;
+  }
+
+  .tooltipBtn {
+    width: 42px;
+    height: 42px;
+    right: -50px;
+    bottom: -50px;
+  }
+
+  .tooltipIco {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tooltipBtn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tooltipIco {
+    width: 26px;
+    height: 26px;
+  }
+
+  .tooltipBtn {
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .tooltip {
+    left: 50%;
+    top: 40%;
+  }
 }

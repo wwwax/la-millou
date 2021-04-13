@@ -1,11 +1,49 @@
-.slider {
-  background-color: orangered;
-  padding: 40px 0;
-  position: relative;
+/* .slider {
+  background-color: tomato;
 }
 
-@media (min-width: 1024px) {
+.sliderItem {
+  height: 300px;
+  display: block;
+}
+
+.sliderImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+} */
+
+/* @media (min-width: 1024px) {
   .slider {
     width: 50%;
   }
+
+  .sliderItem {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .sliderImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+} */
+
+/* TEST */
+
+/* .sliderItem {
+  height: 200px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.sliderItemText {
+  font-size: 30px;
+  background-color: red;
+} */
