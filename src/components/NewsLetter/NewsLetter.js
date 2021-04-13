@@ -18,10 +18,11 @@ const NewsLetter = () => {
           </div>
 
           <div className={styles.privacyPolicy}>
-            <input className={styles.privacyPolicyInput} type='checkbox' id='policy' />
-            <label className={styles.privacyPolicyLabel} htmlFor='policy'>
-              Більше інформації про обробку даних можна знайти в нашій Політиці
-              конфіденційності.
+            <label className={styles.privacyPolicyLabel}>
+              <input className={styles.privacyPolicyCheckbox} type='checkbox' />
+              <span className={styles.checkmark}></span>
+              Більше інформації про обробку даних можна знайти в нашій{' '}
+              <span className={styles.labelBold}>Політиці конфіденційності.</span>
             </label>
           </div>
         </form>

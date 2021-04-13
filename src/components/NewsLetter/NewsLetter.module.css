@@ -34,48 +34,63 @@
 
 /* PRIVACY POLICY */
 
-.privacyPolicy {
-  width: 300px;
-}
-
 .privacyPolicyLabel {
-  user-select: none;
-}
-
-.privacyPolicyInput {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  display: block;
   position: relative;
-  width: 20px;
-  height: 20px;
-  outline: none;
-  margin-right: 20px;
+  padding-left: 35px;
+  user-select: none;
+  cursor: pointer;
+
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #909090;
 }
 
-.privacyPolicyInput::before {
-  content: '';
+.labelBold {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.privacyPolicyCheckbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #ededed;
-  border: none;
 }
 
-.privacyPolicyInput:checked::after {
+.checkmark::after {
+  display: none;
   content: '';
-  width: 10px;
+  width: 6px;
   height: 10px;
-  /* border-radius: 50%; */
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  visibility: visible;
+  left: 7px;
+  top: 3px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.privacyPolicyCheckbox:checked + .checkmark {
+  background-color: var(--primary);
+}
+
+.privacyPolicyCheckbox:checked + .checkmark::after {
+  display: block;
 }
 
 /* MEDIA */
