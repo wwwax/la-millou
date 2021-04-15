@@ -1,14 +1,14 @@
 .sliderItem {
+  width: 100%;
   height: 300px;
-  display: block;
+  position: relative;
 }
 
 .sliderImage {
-  display: block;
   width: 100%;
   height: 100%;
-  /* object-fit: cover;
-  object-position: center top; */
+  object-fit: cover;
+  /* object-position: center top; */
 }
 
 @media (min-width: 1024px) {
