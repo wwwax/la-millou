@@ -19,9 +19,9 @@ const Slider = () => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 7000,
     fade: true,
-    speed: 1000,
+    speed: 2000,
     pauseOnHover: false,
   };
 
@@ -29,7 +29,7 @@ const Slider = () => {
     <div className={styles.slider}>
       <SlickSlider {...settings}>
         <div className={styles.sliderItem}>
-          <Tooltip name='lorem ipsum dolor' brand='lorem ipsum dolor' ico={ico} />
+          <Tooltip name='Torba' brand='Dolce Vita' ico={ico} />
           <img className={styles.sliderImage} src={img_1} alt='' />
         </div>
 
@@ -41,15 +41,6 @@ const Slider = () => {
         <div className={styles.sliderItem}>
           <Tooltip name='lorem ipsum dolor' brand='lorem ipsum dolor' ico={ico} />
           <img className={styles.sliderImage} src={img_3} alt='' />
-        </div>
-
-        <div className={styles.sliderItem}>
-          <Tooltip name='lorem ipsum dolor' brand='lorem ipsum dolor' ico={ico} />
-          <img
-            className={styles.sliderImage}
-            src='https://cdn.pixabay.com/photo/2020/08/09/15/44/tower-5475850_960_720.jpg'
-            alt=''
-          />
         </div>
       </SlickSlider>
     </div>

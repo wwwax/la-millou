@@ -4,7 +4,8 @@ const Intro = () => {
   return (
     <div className={styles.intro}>
       <div className='container'>
-        <h2 className={styles.title}>Вітаємо в світі LaMillou!</h2>
+        <h2 className={styles.title}>Вітаємо в світі LaMillou!!!</h2>
+
         <p className={styles.text}>
           Невдозві ви зможете придбати наші продукти на цій онлайн-платформі за
           посередництвом офіційного дистриб'ютора в Україні. Що це означає? Перш за все,
