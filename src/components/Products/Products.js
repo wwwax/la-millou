@@ -1,6 +1,29 @@
 import Button from '../Button';
 import styles from './Products.module.css';
 
+const products = [
+  {
+    id: 'blankets',
+    name: 'ковдри',
+  },
+  {
+    id: 'baby-clothes',
+    name: 'дитячий одяг',
+  },
+  {
+    id: 'pillows',
+    name: 'подушки',
+  },
+  {
+    id: 'towels-bathrobes',
+    name: 'рушники і халати',
+  },
+  {
+    id: 'bags-backpacks',
+    name: 'торби і рюкзаки',
+  },
+];
+
 const Products = () => {
   return (
     <div className={styles.section}>
@@ -13,40 +36,14 @@ const Products = () => {
 
         <form className={styles.form}>
           <div className={styles.productList}>
-            <div className={styles.productListItem}>
-              <input className={styles.input} type='checkbox' id='blankets' />
-              <label className={styles.label} htmlFor='blankets'>
-                ковдри
-              </label>
-            </div>
-
-            <div className={styles.productListItem}>
-              <input className={styles.input} type='checkbox' id='baby-clothes' />
-              <label className={styles.label} htmlFor='baby-clothes'>
-                дитячий одяг
-              </label>
-            </div>
-
-            <div className={styles.productListItem}>
-              <input className={styles.input} type='checkbox' id='pillows' />
-              <label className={styles.label} htmlFor='pillows'>
-                подушки
-              </label>
-            </div>
-
-            <div className={styles.productListItem}>
-              <input className={styles.input} type='checkbox' id='towels-bathrobes' />
-              <label className={styles.label} htmlFor='towels-bathrobes'>
-                рушники і халати
-              </label>
-            </div>
-
-            <div className={styles.productListItem}>
-              <input className={styles.input} type='checkbox' id='bags-backpacks' />
-              <label className={styles.label} htmlFor='bags-backpacks'>
-                торби і рюкзаки
-              </label>
-            </div>
+            {products.map((product) => (
+              <div className={styles.productListItem} key={product.id}>
+                <input className={styles.input} type='checkbox' id={product.id} />
+                <label className={styles.label} htmlFor={product.id}>
+                  {product.name}
+                </label>
+              </div>
+            ))}
           </div>
 
           <Button text='Надіслати' />

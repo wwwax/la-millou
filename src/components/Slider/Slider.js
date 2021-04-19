@@ -8,6 +8,27 @@ import img_1 from '../../img/slider/image-1.jpg';
 import img_2 from '../../img/slider/image-2.jpg';
 import img_3 from '../../img/slider/image-3.jpg';
 
+const sliderItems = [
+  {
+    id: 1,
+    src: img_1,
+    name: 'Torba',
+    brand: 'Dolce Vita',
+  },
+  {
+    id: 2,
+    src: img_2,
+    name: 'Shirt',
+    brand: 'Dolce Gabbana',
+  },
+  {
+    id: 3,
+    src: img_3,
+    name: 'Hat',
+    brand: 'Louis Vuitton',
+  },
+];
+
 const Slider = () => {
   const settings = {
     dots: false,
@@ -25,41 +46,18 @@ const Slider = () => {
   return (
     <div className={styles.slider}>
       <SlickSlider {...settings}>
-        <div className={styles.sliderItem}>
-          <img className={styles.sliderImage} src={img_1} alt='' />
-
-          <div className={styles.tooltip}>
-            <div className={styles.pulseButton}></div>
-            <div className={styles.tooltipContent}>
-              <div className={styles.name}>Torba</div>
-              <div className={styles.brand}>Dolce Vita</div>
+        {sliderItems.map((item) => (
+          <div className={styles.sliderItem} key={item.id}>
+            <img className={styles.sliderImage} src={item.src} alt={item.brand} />
+            <div className={styles.tooltip}>
+              <div className={styles.pulseButton}></div>
+              <div className={styles.tooltipContent}>
+                <div className={styles.name}>{item.name}</div>
+                <div className={styles.brand}>{item.brand}</div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className={styles.sliderItem}>
-          <img className={styles.sliderImage} src={img_2} alt='' />
-
-          <div className={styles.tooltip}>
-            <div className={styles.pulseButton}></div>
-            <div className={styles.tooltipContent}>
-              <div className={styles.name}>Shirt</div>
-              <div className={styles.brand}>Dolce Gabbana</div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.sliderItem}>
-          <img className={styles.sliderImage} src={img_3} alt='' />
-
-          <div className={styles.tooltip}>
-            <div className={styles.pulseButton}></div>
-            <div className={styles.tooltipContent}>
-              <div className={styles.name}>Hat</div>
-              <div className={styles.brand}>Louis Vuitton</div>
-            </div>
-          </div>
-        </div>
+        ))}
       </SlickSlider>
     </div>
   );
