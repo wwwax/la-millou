@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import Button from '../Button';
+import ThankYou from '../ThankYou';
 import styles from './Products.module.css';
 
 const products = [
@@ -25,6 +27,13 @@ const products = [
 ];
 
 const Products = () => {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsFormSubmitted(true);
+  };
+
   return (
     <div className={styles.section}>
       <div className='container'>
@@ -34,20 +43,24 @@ const Products = () => {
           продукти LaMillou, які повинні бути в продажі на вашу думку як найшвидше
         </p>
 
-        <form className={styles.form}>
-          <div className={styles.productList}>
-            {products.map((product) => (
-              <div className={styles.productListItem} key={product.id}>
-                <input className={styles.input} type='checkbox' id={product.id} />
-                <label className={styles.label} htmlFor={product.id}>
-                  {product.name}
-                </label>
-              </div>
-            ))}
-          </div>
+        {!isFormSubmitted ? (
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <div className={styles.productList}>
+              {products.map((product) => (
+                <div className={styles.productListItem} key={product.id}>
+                  <input className={styles.input} type='checkbox' id={product.id} />
+                  <label className={styles.label} htmlFor={product.id}>
+                    {product.name}
+                  </label>
+                </div>
+              ))}
+            </div>
 
-          <Button text='Надіслати' />
-        </form>
+            <Button text='Надіслати' />
+          </form>
+        ) : (
+          <ThankYou text='Дякую за участь у голосуванні. До зустрічі!' />
+        )}
       </div>
     </div>
   );
