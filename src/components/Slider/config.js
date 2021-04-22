@@ -12,7 +12,8 @@ export const sliderItems = [
         id: 1,
         name: 'Torba',
         brand: 'Dolce Vita',
-        productLink: 'https://www.lamillou.com/shop/dolce-vita-pure-plecak-arizona',
+        productLink:
+          'https://www.lamillou.com/shop/plecaki-dolce-vita-pure/dolce-vita-pure-plecak-arizona',
         position: {
           left: '50%',
           top: '50%',
